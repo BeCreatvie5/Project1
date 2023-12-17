@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-success py-0">
+    <div class="container-fluid content">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" routerLink="foodtruck" id="chefIcon" style="cursor: pointer;">
+        <lord-icon
+          src="https://cdn.lordicon.com/jrtpdmzf.json"
+          trigger="hover"
+          style="width:50px;height:50px">
+        </lord-icon>
+        <span class="icon-text">Country Chefs</span>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link active" aria-current="page" 
+              routerLink="/home">
+              <lord-icon
+                  src="https://cdn.lordicon.com/epietrpn.json"
+                  trigger="hover"
+                  style="width:25px;height:25px">
+              </lord-icon>
+            </a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a routerLink="/cart">
+              <lord-icon
+                src="https://cdn.lordicon.com/eiekfffz.json"
+                trigger="hover"
+                style="width:25px;height:25px">
+              </lord-icon>
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="assests/images/about-us.gif" alt="about-us" style="width: 35px; height: 35px;"></a>
+          </li> -->
+          <li class="nav-item" routerLinkActive="active">
+              <a routerLink="/aboutus">
+                <img src="assets/images/aboutus.gif"  style="width: 25px; height: 25px;">
+              </a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+              <a routerLink="/menu">
+                <img src="assets/images/Menu1.gif"  style="width: 25px; height: 25px;">
+              </a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" style="padding: 10px;" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" style="padding: 10px;" type="submit">Search</button>
+        </form>
+        
+          <li class="nav-item">
+            <a href="#">
+              <img src="assets/images/logout1.gif" alt="Logout" style="width: 35px; height: 35px;">
+            </a>
+        </li>
+      </div>
+    </div>
+  </nav>

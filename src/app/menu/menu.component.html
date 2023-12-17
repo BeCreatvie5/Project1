@@ -1,0 +1,47 @@
+
+<div id="secondBar" class="card background-container">
+    <div class="container wholemenu">
+        <h5>Desi Roties</h5>
+        <div class="row">
+            <div class="col-md-4 col-sm-6" *ngFor="let menuItem of menuItems">
+                <div class="card wholecard mb-3" >
+                    <div class="row g-1">
+                        <div class="col">
+                            <div class="image-container">
+                                <img [src]="menuService.getImagePath(menuItem.imageFileName)" class="img-fluid rounded-start" alt="...">
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <h5 class="card-title">{{menuItem.title}}</h5>
+                                        <hr><br>
+                                            <p class="card-text">{{menuItem.description}}</p>
+                                                <br>
+                                        <button type="button" class="btn btn-primary" style="width: 100px; height:40px;">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

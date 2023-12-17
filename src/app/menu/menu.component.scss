@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h5{
+    color: white;
+    margin-bottom: 20px;
+}
+.wholecard:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+  .wholecard{
+    width: 350px;
+    height: 250px;
+    background-color: #67c2c5;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    transform: translateX(-5%);
+
+}
+.wholemenu
+{
+    margin-top: 60px;
+}
+.image-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+    transform: translateX(-100%);
+}
+
+.image-container:hover .overlay {
+    transform: translateY(0);
+}
+
+.overlay-content {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.image-container:hover .overlay-content {
+    opacity: 1;
+}
+
+#secondBar{
+   background: linear-gradient(to right,#05421a, #05421a,#05421a,#05421a);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 15px solid goldenrod;
+}
+
+
+
+
