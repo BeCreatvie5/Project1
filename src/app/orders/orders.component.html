@@ -3,6 +3,21 @@
         <div class="col-md-8" >
             <div class="card">
                 <h5>Your Orders</h5>
+                <!-- orders.component.html -->
+                <!-- orders.component.html -->
+                <!-- orders.component.html -->
+                <div *ngFor="let menuItem of cartItems" class="order-item" (click)="toggleDescription(menuItem)">
+                    <div class="order-content">
+                    <img [src]="menuService.getImagePath(menuItem.imageFileName)" class="img-fluid order-image" style="width: 100px; height: 100px;" alt="{{ menuItem.title }}">
+                    <div class="order-info">
+                        <p class="order-title">{{ menuItem.title }}</p>
+                        <p *ngIf="showDescription(menuItem)" class="order-description">{{ menuItem.description }}</p>
+                    </div>
+                    </div>
+                </div>
+  
+
+                
             </div>
         </div>
     </div>
