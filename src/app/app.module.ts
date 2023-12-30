@@ -19,6 +19,8 @@ import { SharedService } from './services/sharedservice';
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { PathLocationStrategy, LocationStrategy } from '@angular/common';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,7 @@ import { MatInputModule } from '@angular/material/input';
     AboutusComponent,
     FooterComponent,
     InfoComponent,
-  
+
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,7 @@ import { MatInputModule } from '@angular/material/input';
     MatTableModule,
     MatButtonModule,
     MatInputModule
-    
+
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
@@ -50,6 +52,7 @@ import { MatInputModule } from '@angular/material/input';
     MenuService,
     CartService,
     SharedService,
+    { provide: LocationStrategy, useClass: PathLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })
